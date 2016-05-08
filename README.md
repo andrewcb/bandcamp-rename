@@ -24,9 +24,35 @@ cover.jpg
 02 Evening Side.mp3
 ```
 
+`bcmv` can now also handle compilation albums, where the artist differs between files, and can rename them so that the track number is first; i.e., if a directory contains:
+```
+Makthaverskan - DIYPOP FEST2016 - 01 Asleep.mp3
+Otoboke Beaver - DIYPOP FEST2016 - 03 Akimahenka.mp3
+Trust Fund - DIYPOP FEST2016 - 02 Mother's day.mp3
+```
+
+Running `bcmv` on it will rename these to
+
+```
+01 Makthaverskan - Asleep.mp3
+02 Trust Fund - Mother's day.mp3
+03 Otoboke Beaver - Akimahenka.mp3
+```
+
+which has the further effect of placing the files in track number order, as whoever created the compilation intended.
+
+## Installing
+
+The **bcmv** script's filename in the repository is `bcmv.py`; this is to allow unit testing. 
+Copy `bcmv.py` into your path (optionally renaming it to lose the `.py` extension), and `chmod +x`; all bcmv's code is contained in this file.
+
 ## Dependencies
 
-**bcmvv** is written in Python (version 2.7) and uses only standard libraries. All its code is contained within the one script. To install, just copy the `bcmv` file to somewhere in your path and `chmod +x` it.
+**bcmv** is written in Python (version 2.7) and uses only standard libraries.
+
+## Tests
+
+There are unit tests in the accompanying `bcmvtests.py` file.
 
 ## Author
 
