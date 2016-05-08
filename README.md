@@ -44,7 +44,9 @@ which has the further effect of placing the files in track number order, as whoe
 ## Installing
 
 The **bcmv** script's filename in the repository is `bcmv.py`; this is to allow unit testing. 
-Copy `bcmv.py` into your path (optionally renaming it to lose the `.py` extension), and `chmod +x`; all bcmv's code is contained in this file.
+Copy `bcmv.py` into your path (optionally renaming it to lose the `.py` extension), and `chmod +x` 
+
+All of bcmv's code is contained in the file `bcmv.py`.
 
 ## Dependencies
 
